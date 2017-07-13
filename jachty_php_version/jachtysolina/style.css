@@ -1,0 +1,370 @@
+html{
+	height:100%;
+	min-height:100%;
+	font-family: 'PT Sans', sans-serif;
+}
+body{
+	min-height:100%;
+	margin: 0;
+	background-image: url("img/background11.jpg");
+	top: 0;
+	left: 0;
+	z-index: 0; 
+	background-repeat:no-repeat;
+	background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+ 	background-size: cover;
+}
+
+.header{
+	display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    position: relative;
+    top: 40px;
+    margin-bottom: 300px;
+
+    align-items: center;
+    padding: 5px 15%;
+    border-top: 1px solid #0054A8;
+    border-bottom: 1px solid #0054A8;
+}
+
+nav ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+nav li{
+	min-width: 120px;
+}
+nav a:hover{
+	color: #66d9ff;
+}
+
+a{
+	transition-duration: 0.2s;
+	transition-timing-function: ease-in;
+	-webkit-transition-duration: 0.2s;
+	-webkit-transition-timing-function: ease-in;
+}
+nav a{
+	font-size: 18px;
+	font-weight: bold;
+	padding: 20px 12px;
+}
+.header a{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: black;
+}
+
+header p{
+	font-size: 12px;
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+header{
+	padding: 0 40px;
+	text-align: center;
+}
+header h1{
+	font-size: 36px;
+	margin-bottom: 0;
+	text-decoration: underline;
+
+}
+header a{
+	display: block;
+	padding: 5px;
+}
+header span{
+	color: #0054A8;
+}
+
+article, footer{
+	padding: 5px 15%;
+	background-color: white;
+}
+article{
+	border-top: 1px solid #0054A8;
+	padding-bottom: 200px;
+}
+
+footer{
+	display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #0054A8;
+    vertical-align: middle;
+}
+footer small{
+	margin-top: 25px;
+}
+footer a{
+	color: black;
+}
+
+footer a{
+	font-size: 30px;
+	padding: 3px;
+}
+footer a:hover{
+	color: #0054A8;
+}
+#offer .mainSection h3{
+	text-transform: uppercase;
+	margin-bottom: 0;
+}
+#offer .mainSection #equipment{
+	 list-style-type: circle;
+}
+.mainSection{
+	font-size: 20px;
+	text-align: center;
+}
+h2{
+	text-transform: uppercase;
+}
+
+.mainSection span{
+	color: #0054A8;
+	font-weight: bold;
+}
+.aboutUsNav{
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.aboutUsNav a i{
+	font-size: 60px;
+}
+.aboutUsNav a h3{
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.aboutUsNav a{
+	text-align: center;
+	padding: 40px 40px 30px 40px;
+	color: #000000;
+	text-decoration: none;
+	border-radius: 10px;
+	border: 4px solid #66d9ff;
+	margin: 10px;
+
+}
+.aboutUsNav a:hover{
+	background-color: #66d9ff;
+}
+#offer #yachts span{
+	color: #0054A8;
+}
+#offer #yachts i{
+	padding: 6px;
+}
+
+#priceList table{
+	margin-left: auto;
+   	margin-right: auto;
+   	border-collapse: collapse;
+}
+#priceList table, th, td {
+    border-bottom: 1px solid #DDDDDD;
+}
+
+#offer #yachts{
+	list-style-type: none;
+	margin-bottom: 50px;
+}
+td, th{
+	padding: 5px 30px;
+}
+tr:hover {
+	background-color: #f5f5f5;
+}
+th {
+	text-transform: uppercase;
+    background-color: white;
+    color: #0054A8;
+}
+#contact .contact{
+	padding: 30px 0;
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#contact .contact iframe{
+	border-radius: 10px;
+}
+
+#contact .contact ul{
+	list-style-type: none;
+	text-align: left;
+	vertical-align: middle;
+	margin-bottom: 40px;
+}
+#contact .contact ul i{
+	width: 30px;
+	height: 42px;
+	vertical-align: middle;
+}
+
+#contact .contact ul .fa-home{
+	font-size: 30px;
+	vertical-align: middle;
+}
+#contact .contact ul .fa-credit-card-alt{
+	vertical-align: top;
+}
+
+#contact .contact ul .fa-phone{
+	font-size: 30px;
+}
+
+#contact .contact ul .fa-envelope{
+	font-size: 26px;
+}
+
+
+nav ul.topnav li.icon i{
+	font-size: 40px;
+}
+@media screen and (min-width: 981px) {	
+	nav ul.topnav li.icon {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 1080px) and (min-width: 981px) {
+	article, footer{
+		padding: 5px 10%;
+	}
+	nav li{
+		min-width: 80px;
+	}
+	.header{
+		flex-wrap: wrap;
+		justify-content: space-around;
+		padding: 5px 10%;
+		margin-bottom: 200px;
+	}
+	article{
+		min-height: 800px;
+	}
+}
+
+@media screen and (max-width:980px) {
+	article, footer{
+		padding: 5px 1%;
+	}
+	.header{
+		padding: 5px 1%;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		margin-bottom: 100px;
+	}
+	nav li{
+		min-width: 20px;
+	}
+	nav ul.topnav li:not(:first-child) {
+	    display: none;
+	}
+	article{
+		min-height: 800px;
+	}
+}
+
+@media screen and (max-width:980px) {
+
+  	ul.topnav.responsive li.icon {
+	    position: relative;
+  	}
+  	nav ul.topnav.responsive li a{
+  		 width: 100%;
+  		 font-size: 40px;
+  	}
+
+  	nav ul.topnav.responsive li:not(:first-child) {
+	    display: flex;
+	    justify-content: center;
+	    width: 100%;
+	    
+	}
+	nav ul.topnav.responsive li.icon i{
+		padding-top: 30px;
+	}
+	nav ul.topnav.responsive{
+		left: 0;
+	    top: 0;
+		flex-direction: column; 
+		position: absolute;
+		background-color: #FFFFFF;
+		border-bottom: 1px solid #0054A8;
+		text-align: center;
+		width: 100%;
+	}
+}
+
+/* GALLERY */ 
+#gallery .picture {
+	width: 600px;
+	height: 400px;
+	padding: 2px;
+	border: 1px solid #0054A8;
+}
+#gallery .picture:hover {
+	width: 604px;
+	height: 404px;
+	padding: 0;
+}
+#gallery .yachts section{
+	width: 610px;
+}
+#gallery h3{
+	font-size: 40px;
+	text-transform: uppercase;
+}
+
+#gallery .miniature a {
+	display: flex;
+	width: 150px;
+	height: 150px;
+	padding: 1px;
+	margin: 2px;
+	border: 1px solid #0054A8;
+}
+ 
+#gallery .miniature a:hover {
+	border: 1px solid #0054A8;
+	background-color: #0054A8;
+}
+ 
+#gallery .miniature li {
+	list-style: none;
+}
+ 
+#gallery .miniature {
+	margin: 0;
+	padding: 0;
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+ 
+#gallery .miniature img {
+	width: 150px;
+	height: 150px;
+}
+
+#gallery .yachts{
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
